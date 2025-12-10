@@ -1,0 +1,141 @@
+.custom-node {
+  background: white;
+  border-radius: 12px;
+  padding: 1rem;
+  min-width: 200px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border: 3px solid transparent;
+  transition: all 0.2s;
+}
+
+.custom-node.selected {
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.2);
+}
+
+.start-node {
+  border-color: #10b981;
+  background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);
+}
+
+.task-node {
+  border-color: #3b82f6;
+  background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+}
+
+.approval-node {
+  border-color: #f59e0b;
+  background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+}
+
+.automated-node {
+  border-color: #8b5cf6;
+  background: linear-gradient(135deg, #ede9fe 0%, #ddd6fe 100%);
+}
+
+.end-node {
+  border-color: #ef4444;
+  background: linear-gradient(135deg, #fee2e2 0%, #fecaca 100%);
+}
+
+.node-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.node-icon {
+  font-size: 1.5rem;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.9);
+  flex-shrink: 0;
+}
+
+.node-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.node-text h4 {
+  margin: 0 0 0.5rem 0;
+  color: #1f2937;
+  font-size: 0.875rem;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.node-description {
+  margin: 0;
+  color: #6b7280;
+  font-size: 0.75rem;
+  line-height: 1.4;
+}
+
+.node-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin-top: 0.5rem;
+}
+
+.detail-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  color: #4b5563;
+}
+
+.detail-label {
+  font-weight: 500;
+  opacity: 0.8;
+}
+
+.detail-value {
+  font-weight: 600;
+}
+
+.priority-badge {
+  display: inline-block;
+  padding: 0.125rem 0.5rem;
+  border-radius: 20px;
+  font-size: 0.625rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 0.25rem;
+}
+
+.priority-high {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.priority-medium {
+  background: #fef3c7;
+  color: #d97706;
+}
+
+.priority-low {
+  background: #d1fae5;
+  color: #059669;
+}
+
+.node-badge {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: white;
+  color: #374151;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.625rem;
+  font-weight: 600;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
